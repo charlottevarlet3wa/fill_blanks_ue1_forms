@@ -1,0 +1,62 @@
+<form *action*="submit_contact.php" *method*="POST" *enctype*="multipart/form-data">
+
+
+    <*fieldset*>
+
+        <legend>Informations personnelles</legend>
+        <label *for*="nom">Nom :</label>
+        <input *type*="text" id="nom" name="nom" *required* placeholder="Votre nom"><br>
+
+        <*label* for="email">Email :</*label*>
+        <input *type*="email" id="email" name="email" required *placeholder*="exemple@domaine.com"><br>
+
+        <label for="telephone">Téléphone :</label>
+        <input type="tel" id="telephone" *name*="telephone" placeholder="+33612345678"><br>
+
+        <label for="website">Site Web :</label>
+        <input type="url" *id*="website" name="website" placeholder="https://www.votresite.com"><br>
+
+    </*fieldset*>
+
+
+    <fieldset>
+        <*legend*>Préférences</*legend*>
+        <label for="musique">Style de musique préféré :</label>
+        <*select* id="musique" name="musique">
+            <*option* value="rock">Rock</option>
+            <option *value*="rap">Rap</option>
+        </*select*><br>
+
+        <label>Hobbies :</label>
+        <*input* type="*checkbox*" name="hobbies[sport]" id="sport" value="1">
+        <*label* *for*="sport">Sport</label>
+        <input type="*checkbox*" name="hobbies[lecture]" id="lecture" value="1">
+        <label for="lecture">Lecture</label><br>
+
+        <label>Pain au chocolat ou chocolatine :</label>
+        <input type="radio" name="debat" value="pain" id="pain" *checked*>
+        <label for="pain">Pain au chocolat</label>
+        <input type="radio" name="debat" value="chocolatine" id="chocolatine">
+        <label for="chocolatine">Chocolatine</label><br>
+
+        <label for="couleur">Couleur préférée :</label>
+        <input type="color" id="couleur" name="couleur" value="*#ff0000*"><br>
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Autres informations</legend>
+        <label for="message">Votre message :</label>
+        <textarea id="message" name="message" *rows*="5" *cols*="30" placeholder="Écrivez votre message ici..."></textarea><br>
+
+        <label for="fichier">Joindre un fichier :</label>
+        <input type="file" id="fichier" name="fichier"><br>
+
+        <label for="date">Date de rendez-vous :</label>
+        <input type="date" id="date" name="date"><br>
+    </fieldset>
+
+
+    <button type="*submit*">Envoyer le formulaire</button>
+    <button type="*reset*">Réinitialiser</button>
+</form>

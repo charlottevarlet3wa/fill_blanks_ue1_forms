@@ -1,0 +1,176 @@
+body {
+  font-family:'Courier New', Courier, monospace;
+  font-size: 0.9em;
+}
+
+#game {
+    position: relative;
+    width:700px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#text {
+    background-color: white;
+    width: 700px;
+    height:600px;
+    overflow-y: scroll;
+    position: relative;
+}
+
+#text {
+    overflow-y: auto; /* Enables vertical scrolling */
+    max-height: 600px; /* Maximum height for the text section */
+    width: 500px;
+    padding: 10px; /* Padding for inner spacing */
+    background-color: white; /* Background color for the text section */
+
+}
+
+#words {
+    /* position: fixed; */
+    position:absolute;
+    /* float:right; */
+    height: 600px;
+    /* height: 100%; */
+    overflow-y: scroll;
+    padding : 5px 20px;
+    /* background: red; */
+    right: 0;
+    background-color: aliceblue;
+}
+
+.draggable {
+    padding: 5px;
+    margin: 5px;
+    background-color: white;
+    border: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  input[type="text"] {
+    width: 80px;
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid gray;
+  }
+  
+  input.correct {
+    border-color: green;
+  }
+  
+  input.incorrect {
+    border-color: red;
+  }
+
+  #words {
+    overflow-y: auto; /* Enables vertical scrolling */
+    max-height: 600px; /* Maximum height for the text section */
+    padding: 10px; /* Padding for inner spacing */
+    background-color: white; /* Background color for the text section */
+
+    /* Styles for scrollbar */
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #ff898b white; /* For Firefox */
+}
+
+/* Styles for Webkit browsers like Chrome, Safari */
+#words::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+#words::-webkit-scrollbar-track {
+    background: white; /* Color of the part the scrollbar can move within */
+}
+
+#words::-webkit-scrollbar-thumb {
+    background-color: #ff898b; /* Color of the scrollbar itself */
+    border-radius: 10px; /* Rounded corners of the scrollbar */
+    border: 2px solid white; /* Creates padding around the scrollbar */
+}
+
+
+
+
+
+
+#text {
+  overflow-y: auto; /* Enables vertical scrolling */
+  max-height: 1000px; /* Maximum height for the text section */
+  padding: 10px; /* Padding for inner spacing */
+  background-color: white; /* Background color for the text section */
+
+  /* Styles for scrollbar */
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #ff898b white; /* For Firefox */
+}
+
+/* Styles for Webkit browsers like Chrome, Safari */
+#text::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+#text::-webkit-scrollbar-track {
+  background: white; /* Color of the part the scrollbar can move within */
+}
+
+#text::-webkit-scrollbar-thumb {
+  background-color:#ff898b; /* Color of the scrollbar itself */
+  border-radius: 10px; /* Rounded corners of the scrollbar */
+  border: 2px solid white; /* Creates padding around the scrollbar */
+}
+
+
+
+
+
+
+/* styles.css */
+/* styles.css */
+
+.text-container {
+  background-color: #1e1e1e;
+  color: #dcdcdc;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: 'Consolas', 'Courier New', monospace;
+  white-space: pre-wrap;
+}
+
+.tag {
+  color: #569cd6;
+}
+
+.attribute-name {
+  color: #6A9955; /* Green for attribute names */
+}
+
+.attribute-value {
+  color: #ce9178; /* Keep Red for attribute values */
+}
+
+.comment {
+  color: grey; /* Adjusted to match attributes if needed */
+}
+
+.text {
+  color: #D4D4D4;
+}
+
+.angle-brackets {
+  color: #D4D4D4;
+}
+
+.primary-btn {
+  padding: 10px;
+  margin: 10px;
+  color: white;
+  background-color: #ff7a7d;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 1.2em;
+  font-weight: bold;
+}
